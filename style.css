@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0b0c1e;
+}
+
+.container {
+  max-width: 1400px;
+  padding: 0 4%;
+  margin: 0 auto;
+}
+
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+}
+
+nav .logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+nav ul li a {
+  font-size: 19px;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main .img {
+  width: 50%;
+  padding: 40px;
+}
+
+main .img img {
+  width: 100%;
+}
+
+main .conteudo {
+  width: 50%;
+  color: white;
+}
+
+.conteudo h1 {
+  font-size: 3rem;
+}
+
+.conteudo p {
+  margin-top: 30px;
+  font-size: 1.2rem;
+}
+
+.botoes button {
+  margin: 20px 10px;
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.botoes button a {
+  text-decoration: none;
+  color: white;
+}
+
+.botoes button:first-child {
+  /* first-child - Se refere ao primeiro elemento filho(child), apos o pai(classe).*/
+  box-shadow: 0 0 20px #ff3e6ea8;
+  background-image: linear-gradient(#ff3e6e, #be2d6e);
+}
+
+.botoes button:last-child {
+  /*last-child - Por sua vez, se refere ao ultimo elemento filho, apos a classe pai*/
+
+  box-shadow: 0 0 20px #6edbf97e;
+  background-image: linear-gradient(#6edcf9, #1c60a0);
+}
+
+.clientes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.clientes div {
+  width: 20%; /*Das 5 imagens, cada uma ocupara 20% do espaco*/
+  padding: 20px;
+  text-align: center;
+}
+
+.clientes div img {
+  width: 100%; /*Dentro desse espa;o ocupado, veremos 100% da imagem*/
+}
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 860px) {
+  main .img {
+    display: none;
+  }
+
+  main .conteudo {
+    width: 100%;
+    text-align: center;
+    margin-top: 90px;
+  }
+
+  .botoes {
+    margin-top: 30px;
+  }
+
+  .clientes {
+    margin-top: 70px;
+  }
+
+  .clientes div{
+    width: 50%;
+  }
+
+  .clientes div img{
+    width: 70%;
+  }
+}
